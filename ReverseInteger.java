@@ -2,6 +2,18 @@ package leetcode;
 
 public class ReverseInteger {
 	
+	/**
+	 
+	 Intialize sum =0
+	 Iterate while loop check condition x!=0
+	 Add sum = sum*10 + last_digit
+	 x = x/10;
+	 return sum
+	 
+	
+	
+	**/
+	
 	   public static int reverse(int x) {
 	        
 	        long sum = 0;
