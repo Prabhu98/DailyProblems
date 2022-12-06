@@ -1,0 +1,39 @@
+package leetcode;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class RemoveVowels {
+	
+	public static String removeVowel(String S) {
+		
+		Set<Character> hset = new HashSet<>();
+		hset.add('a');
+		hset.add('e');
+		hset.add('i');
+		hset.add('o');
+		hset.add('u');
+		
+	   StringBuilder sb = new StringBuilder();
+	   
+	   for (Character value : S.toCharArray()) {
+		   if(!hset.contains(value)) {
+			   sb.append(value);
+		   }
+		
+	}
+		
+		
+		return sb.toString();
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String removeVowel = removeVowel("test");
+		System.out.println(removeVowel);
+	}
+
+}
